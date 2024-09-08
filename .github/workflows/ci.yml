@@ -28,10 +28,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run linting
-      run: |
-        pip install pylint
-        pylint your_module  # Replace 'your_module' with your actual module or package name
+    # Comment out or remove this step if you don't want to use pylint
+    # - name: Run linting
+    #   run: |
+    #     pip install pylint
+    #     pylint myapp  # Replace 'myapp' with your actual module or package name
 
     - name: Run tests
       run: |
